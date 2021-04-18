@@ -8,12 +8,7 @@ module.exports = {
     es6: true,
   },
   plugins: ["@typescript-eslint/eslint-plugin"],
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:import/errors",
-    "plugin:import/typescript",
-  ],
+  extends: ["plugin:@typescript-eslint/recommended", "prettier", "plugin:import/errors", "plugin:import/typescript"],
   rules: {
     "import/order": ["error", { alphabetize: { order: "asc" } }],
   },

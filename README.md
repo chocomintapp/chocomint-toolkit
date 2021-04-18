@@ -30,6 +30,9 @@ This is chocomint toolkit repository
 
 ### gitignore
 
+- must place this .gitignore in project root
+  https://github.com/chocomintapp/chocomint-toolkit/blob/main/.gitignore
+
 ### lincense
 
 - basically MIT license is used for chocomints projects

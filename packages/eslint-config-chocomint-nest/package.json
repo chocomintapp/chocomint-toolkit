@@ -10,10 +10,13 @@
     "lib"
   ],
   "repository": "https://github.com/chocomintapp/chocomint-toolkit/tree/master/packages/eslint-config-chocomint-nest",
+  "scripts": {
+    "lint": "eslint ./lib/*js"
+  },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@chocomintapp/eslint-config-chocomint-base": "^0.0.1"
+    "@chocomintapp/eslint-config-chocomint-base": "^0.0.2"
   }
 }

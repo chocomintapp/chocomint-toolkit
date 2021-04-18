@@ -17,17 +17,24 @@
   "homepage": "https://github.com/chocomintapp/chocomint-toolkit#readme",
   "scripts": {
     "prepare": "husky install",
-    "format:check": "prettier . --ignore-path .gitignore --write",
+    "format:check": "run-s format:check:eslint format:check:prettier",
+    "format:check:eslint": "lerna run lint --  --max-warnings 0",
+    "format:check:prettier": "prettier . --ignore-path .gitignore --loglevel error",
+    "format:fix": "run-s format:fix:eslint format:fix:prettier",
+    "format:fix:eslint": "lerna run lint -- --fix",
+    "format:fix:prettier": "prettier . --ignore-path .gitignore --write",
     "build": "lerna run build",
-    "test": "lerna run test",
-    "release": "yarn build && yarn lerna publish"
+    "test": "lerna run test"
   },
   "devDependencies": {
+    "@chocomintapp/eslint-config-chocomint-base": "^0.0.2",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "eslint": "^7.23.0",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
-    "prettier": "^2.1.2"
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.2",
+    "typescript": "^4.2.4"
   }
 }
