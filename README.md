@@ -1,2 +1,3 @@
-# chocomint-lib
-This is chocomint library repository
+# chocomint-toolkit
+
+This is chocomint toolkit repository

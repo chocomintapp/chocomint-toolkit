@@ -1,0 +1,26 @@
+{
+  "name": "@chocomintapp/eslint-config-chocomint-base",
+  "version": "0.0.1",
+  "description": "Eslint config for Chocomintapp base",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": "https://github.com/chocomintapp/chocomint-toolkit/tree/master/packages/eslint-config-chocomint-base",
+  "license": "MIT",
+  "author": "taijusanagi",
+  "private": false,
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "peerDependencies": {
+    "eslint": "^7.2.0",
+    "prettier": "^2.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
