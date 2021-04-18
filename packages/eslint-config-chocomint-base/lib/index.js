@@ -5,10 +5,18 @@ module.exports = {
     ecmaVersion: 2020,
   },
   env: {
-    es6: true,
+    node: true,
+    es2020: true,
   },
-  plugins: ["@typescript-eslint/eslint-plugin"],
-  extends: ["plugin:@typescript-eslint/recommended", "prettier", "plugin:import/errors", "plugin:import/typescript"],
+  plugins: ["@typescript-eslint"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:import/errors",
+    "plugin:import/typescript",
+  ],
   rules: {
     "import/order": ["error", { alphabetize: { order: "asc" } }],
   },

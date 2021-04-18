@@ -27,7 +27,7 @@
     "test": "lerna run test"
   },
   "devDependencies": {
-    "@chocomintapp/eslint-config-chocomint-base": "^0.0.2",
+    "@chocomintapp/eslint-config-chocomint-base": "^0.0.5",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "eslint": "^7.23.0",

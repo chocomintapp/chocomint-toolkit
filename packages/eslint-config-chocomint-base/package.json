@@ -1,7 +1,7 @@
 {
   "name": "@chocomintapp/eslint-config-chocomint-base",
   "description": "Eslint config for chocomint base project",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "license": "MIT",
   "author": "taijusanagi",
   "private": false,
