@@ -7,19 +7,7 @@ This is chocomint toolkit repository
 ### editorconfig
 
 - must place this .editconfig in project root
-
-```
-root = true
-
-[*]
-charset = utf-8
-end_of_line = lf
-indent_style = space
-insert_final_newline = true
-trim_trailing_whitespace = false
-max_line_length = 120
-indent_size = 2
-```
+  https://github.com/chocomintapp/chocomint-toolkit/blob/main/.editorconfig
 
 ### eslint
 
@@ -30,16 +18,22 @@ indent_size = 2
 - nest
   - @chocomintapp/eslint-config-chocomint-nest
 
+### format
+
+- format check by prettier
+
 ### precommit
 
 - must lint commit by commitlint
 - must place this editconfig.json in project root
+  https://github.com/chocomintapp/chocomint-toolkit/blob/main/.commitlintrc.json
 
-```
-{
-  "extends": ["@commitlint/config-conventional"]
-}
+### gitignore
 
-```
+### lincense
 
-- format check by prettier
+- basically MIT license is used for chocomints projects
+
+### author
+
+- If you initiate the project, please put your name as author

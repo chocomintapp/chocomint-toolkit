@@ -1,0 +1,19 @@
+{
+  "name": "@chocomintapp/eslint-config-chocomint-nest",
+  "description": "Eslint config for chocomint nestjs project",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "taijusanagi",
+  "private": false,
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": "https://github.com/chocomintapp/chocomint-toolkit/tree/master/packages/eslint-config-chocomint-nest",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@chocomintapp/eslint-config-chocomint-base": "^0.0.1"
+  }
+}
