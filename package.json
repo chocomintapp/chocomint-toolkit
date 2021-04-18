@@ -17,18 +17,14 @@
   "homepage": "https://github.com/chocomintapp/chocomint-toolkit#readme",
   "scripts": {
     "prepare": "husky install",
-    "format": "prettier . --ignore-path .gitignore --write",
+    "format:check": "prettier . --ignore-path .gitignore --write",
     "build": "lerna run build",
     "test": "lerna run test",
     "release": "yarn build && yarn lerna publish"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "eslint": "^7.23.0",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
